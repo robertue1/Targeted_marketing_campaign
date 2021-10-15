@@ -35,51 +35,34 @@ Assumptions are:
 
 ## Design
 
-In order to fulfill the requirements of this project, after performing EDA and creating visualizations, we were able to tackle 
-
-
-
-To reach the prediction goal of this project, we decided to analyze features like budget, runtime, MPPA rating, the distributor, and the genres a movie belongs to.
-Since there were categorical non-ordinal features, the implementation of dummy variables was needed. Once different models' performances were compared, 
-we chose Lasso as the tool for making predictions and to determine which factors have positive or negative correlations with the target. 
+In order to fulfill the requirements of this project, the main goal was to clearly understand the market share of different EV makers, using the zip code feature of our data to delimitate regions in which one particular maker would be the biggest player, thus, we could tailored our marketing approach accordingly. 
 
 ## Data
 
 Main sources of data for this project:
-- [BoxOfficeMojo](http://boxofficemojo.com/)
-- [Wikipedia](https://en.wikipedia.org/wiki/Main_Page)
+- [Electric Vehicle title and registrations data - Washington State](https://data.wa.gov/Transportation/Electric-Vehicle-Title-and-Registration-Activity/rpr4-cgyd)
+- [Economic and population - Washington State](https://ofm.wa.gov)
 
-From BoxOfficeMojo we were able to extract the bulk of the data, but, as it is almost always the case, data was missing. That is why, Wikipedia was used 
-to impute the missing values. 
+We were able to extract insights from this data sources mainly in an individual fashion, with little to none merging. 
 
-One row of data for this project holds: Title, domestic opening, domestic lifetime gross, worldwide lifetime gross, budget, duration, release date, 
-distributor, and genre for each one of the movies. 
+One row from the Electric Vehicle title and registrations data contains: Clean alternative fuel type, model year, make, model, new or used, transaction date, county, city, zip, electric range.  
 
 ## Algorithms
 
 * Data Acquisition: Data was mainly obtained in CSV format. 
-* Data Exploration: Observation of the data and its characteristics, looking for missing or unexpected values. 
-* Data Cleaning: Done initially.
-* Data Transformation: Creating dummy variables for the categorical non-ordinal features and standardization of the numeric ones for use in the regularized models.
-* Data Visualization: Studying the performance of the models via graphs. 
+* Data Exploration: Observation of the data and its characteristics, looking for unexpected values. 
+* Data Cleaning: Done mostly initially.
+* Data Visualization: This point was key to better understand the data and drive our initial recommendations to the client. 
+* Data Clustering: This would be a future implementation. 
 
-
-## Models
-
-Linear and Polynomial regression, Ridge and Lasso. 
-
-Model Evaluation and Selection
-
-Initially, a simple train/validation/test was used for the selection of the model, but then, we used a more rigorous Cross-Validation scheme. 
-The best performing model was used, but due to the magnitude of features we were considering, a Lasso implementation was done to make the predictions. 
 
 
 ## Tools
 
-* BeautifulSoup and Selenium for web-scraping (data acquisition)
-* Numpy and Pandas for data manipulation
-* Scikit-learn for modeling
-* Matplotlib and Seaborn for plotting
+* Numpy and Pandas for initial data manipulation. 
+* Matplotlib and Seaborn for plotting. 
+* Google Sheets for exploring and aggregating data. 
+* Tableau was used for visualizations. 
 
 ## Communication
 
