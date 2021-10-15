@@ -1,4 +1,4 @@
-# Targeted marketing campaign for EVSOLAR in Washington State.
+# Targeted marketing campaign for ElectricNow in Washington State.
 
 ## Roberto Linares
 
