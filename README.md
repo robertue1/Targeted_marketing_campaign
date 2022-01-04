@@ -1,6 +1,6 @@
-# Targeting areas for an EV charging station company
+# Geographic targeting for Ads of an EV charging station company. 
 
-Roberto Linares
+by Roberto Linares
 
 
 
